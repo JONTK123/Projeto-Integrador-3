@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/degrade">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escaneie a pulseira NFC do cliente"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/btnQuickOpenLocker"
+        android:layout_height="wrap_content"
+        android:text="Abrir momentaneamente"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_width="280dp"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnfinishLocation"
+        android:layout_height="wrap_content"
+        android:text="Finalizar locação"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_width="280dp"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

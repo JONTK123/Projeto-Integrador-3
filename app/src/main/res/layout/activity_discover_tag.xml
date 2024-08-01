@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade">
+
+    <TextView
+        android:id="@+id/tagDataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Escaneie a Tag para iniciar a locacao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/tagDataImage1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintTop_toBottomOf="@id/tagDataTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/tagDataImage2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintTop_toBottomOf="@id/tagDataImage1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tagClienteInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tagDataImage2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/writeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Armario"
+        app:layout_constraintTop_toBottomOf="@id/tagClienteInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/prosseguirButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prosseguir"
+        app:layout_constraintTop_toBottomOf="@id/writeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/encerrarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encerrar Locação"
+        app:layout_constraintTop_toBottomOf="@id/prosseguirButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/abrirArmarioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Armário"
+        app:layout_constraintTop_toBottomOf="@id/encerrarButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/EncerrarTextoCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tagClienteInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
