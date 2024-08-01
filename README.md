@@ -11,6 +11,8 @@ Fase 3: Navegação e Aluguel de Armários A terceira fase envolveu a implementa
 
 Fase 4: Testes e Implementação de NFC A quarta e última fase foi dedicada aos testes e à implementação de funcionalidades adicionais. Geramos o APK do aplicativo e realizamos testes em dispositivos móveis para garantir a funcionalidade. Implementamos também o uso de NFC para simular o uso de pulseiras que liberam e bloqueiam os armários. Adicionalmente, desenvolvemos a lógica para tirar fotos dos clientes e salvá-las no banco de dados, integrando essas imagens às informações das pulseiras.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Integrator Project - 3
 Title: Public Locker Rental System
 
